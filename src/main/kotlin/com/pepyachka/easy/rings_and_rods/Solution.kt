@@ -4,7 +4,7 @@ class Solution {
     fun countPoints(rings: String): Int {
         return Regex("[RGB]\\d").findAll(rings)
             .map { it.value }
-            .groupBy({ Character.getNumericValue(it[1]) }, { it })
+            .groupBy({ it[1] - '0' }, { it })
             .map { it.value.toSet() }
             .count { it.size == 3 }
     }
