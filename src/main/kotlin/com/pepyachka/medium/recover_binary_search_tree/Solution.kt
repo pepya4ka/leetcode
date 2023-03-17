@@ -3,7 +3,7 @@ package com.pepyachka.medium.recover_binary_search_tree
 import java.util.*
 
 class Solution {
-    fun recoverTree(root: TreeNode?): Unit  {//chatGRT
+    fun recoverTree(root: TreeNode?): Unit  {
         var prev: TreeNode? = null
         var big: TreeNode? = null
         var small: TreeNode? = null
